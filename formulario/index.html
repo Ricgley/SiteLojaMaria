@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Biblioteca Estude">
+	<!-- Blibliotecas.-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.png">
+	<title>Loja de Roupas Maria</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--Logo.-->
+	<header class="barra-logo">
+		<div class="logo">
+			<img src="imagens/logo.png" />
+			<img class="redes-sociais" src="imagens/redes-sociais.jpg" />
+		</div>
+	</header>
+	<div class="conteudo">
+		<!--Slide.-->
+		<div id="slider">
+			<img class="selected" src="imagens/banner1.png">
+			<img src="imagens/banner2.png">
+			<img src="imagens/banner3.png">
+		</div>
+		<h1>VOCÊ QUER FICAR BONITA?... VEM PRAS LOJAS MARIA!</h1>
+		<div class="compras">
+			<h2>Cadastre-se abaixo para participar do sorteio <br>de um vale compras no valor de R$ 300,00:</h2>	
+		</div>
+		<h3>Cadastro</h3>
+		<!--Formulário Cadastro.-->
+		<div class="formulario1">
+			<form id="formCadastro" method="POST" action="bd.php">
+				<input type="text" placeholder="Nome" name="nome" required />
+				<input type="email" placeholder="E-mail" name="email" required />
+				<input class="telefone" type="text" placeholder="Telefone" name="telefone" required />
+				<textarea placeholder="Mensagem" name="mensagem" minlength="10" maxlength="150" required></textarea>
+				<input class="botao" type="submit" name="Enviar" value="Enviar" />
+			</form>
+			<img src="imagens/mulher-apontando.png">
+		</div>
+	</div>
+	<!--Bliblioteca java - script mascara telefone.-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+	<!--Marcara telefone.-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.telefone').mask('(00) 00000-0000');
+		});
+	</script> 
+	<script src="script.js"></script> 
+</body>
+</html>

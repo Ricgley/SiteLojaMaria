@@ -1,0 +1,170 @@
+body{
+/* Plano de Fundo */
+width: 100%;
+height: 100%;
+background-color:  white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* Imagem Fundo */
+background: #FFFFFF url("imagens/mulher1.jpg") repeat right top fixed;
+background-size: 15%;
+}
+/* Slide transição de imagens. */
+#slider {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+}
+#slider img{
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+#slider img.selected{
+	opacity: 1;
+}
+/* Formulario de Cadastro - formatação. */
+#formCadastro{
+	width: 5%;
+	min-width: 300px;
+	font-size: 16px;
+	border-width: 6px;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: #FFFFFF url("imagens/mulher-apontando.png") no repeat right top fixed;
+	background-size: 25%;
+}
+/* Formulario de Cadastro - Posicionamento. */
+.formulario1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+/* Banner Dinâmico - formatação. */
+.conteudo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	background-color: rgba(255,255,255,0.85);
+	height: auto;			
+}
+/* Estilização Formulário Cadastro. */
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	margin-bottom: 500px;
+	padding-left: 200px;
+}
+input, textarea {
+	width: 280px;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 5px;
+	border-width: 1px;
+    border-bottom: 3px solid #FFC0CB;
+  	background-color: #FFF0F5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-color: #FFC0CB;
+	color: rgb(175, 17, 17);
+}
+input::placeholder,textarea::placeholder{
+ 	color: #FFC0CB;
+  	opacity: 1; 
+}
+textarea{
+	resize: none;
+	height: 135px;
+	width: 220px;
+}
+.botao{
+	background-color: #FF1493;
+}
+/* Estilização Barra Logo. */
+.barra-logo{
+	width: 90%;
+	background-color: white;
+	height: 150px;
+	margin-bottom: 0;
+}
+.logo{
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+.redes-sociais{
+	width: auto;
+	height: 75px;
+	object-fit: contain;
+	margin-right: 12px;
+}
+/* Estilização Textos Site. */
+h1{
+	font-family: "Arial Black";
+	color:#FF00FF;
+	font-size: 50px;
+	text-align:center;
+	font-weight: 900;
+	font-variant: small-caps;
+}
+h2{
+	font-family: "Arial black";
+	color:white;
+	font-size: 36px;
+	text-align:center;
+	background-color: #FF1493;		
+}
+h3{
+	font-family: "Arial black";
+	font-size: 36px;
+	color: #FF1493;
+	text-align:center;
+	margin-bottom: auto;	
+}
+/* Efeito maquina de datilografia. */
+h1::after {
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation-name: pisca;
+	animation-duration: .7s;
+	animation-iteration-count: infinite;
+}
+@keyframes pisca {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+.apontando {
+	background-size: 50%;
+	max-width: 300;
+	max-height: 100;
+}	
+.formulario1 img{
+	position: relative;
+	right: 115px;
+	height: 370px;
+	z-index: 100;
+}
